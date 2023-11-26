@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hw 3: Website project</title>
+
+    <link rel="stylesheet" href="websitepage.css">
+</head>
+<body>
+    <header>
+        <div class="header_logo">
+            <a href="https://www.ada.edu.az" class="header__logo__link" target="_blank"><img src="media/ada_logo_white.png" alt="Logo" class="header__logo"></a>
+        </div>
+
+        <div class="header__txt">
+                <a href="index.html" class="header__link">Home</a>
+                <a href="./hourOfCode.html" class="header__link">Hour of Code Event</a>
+                <a href="#" class="header__link links__mobile">Website Project</a>         
+        </div>
+    </header>
+    
+    
+    
+    <div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Introduction</a></li>
+                <li><a href="#introduction">Overview of the Project</a></li>
+                <li><a href="#teamid">Team members</a></li>
+            </ul>
+        </nav>  
+    </div>
+    
+
+    <div class="Intro" id="introduction">
+        <h1>Introduction</h1>
+        <p>Welcome to our Website Project!</p>
+        <p>In a limited timeframe our team had a great journey starting with the completion of
+            3 courses for enhancing our capacity of markup languages - HTML, CSS, and JavaScript.
+            Now, it is time demonstrate our newfound knowledge, as we collaborate to create a collective 
+            website project. This project is not only the indication of individual skills, but also a 
+            product of our teamwork and development.
+        </p>
+    </div>
+    <h1 id="overvtitle">Overview of The Project</h1>
+    <div class="overv" id="overview">
+        <div id="overv_txt">
+            <p>Our project is a culmination of expertise gained through the courses in HTML, 
+                CSS, and JavaScript. The primary goal was not only to master these markup languages 
+                individually but to seamlessly integrate them in a collaborative effort. In this section, 
+                we offer a brief explanation of the key components learned throughout the courses and the 
+                objectives that define our project.<br><br>
+                - The journey began with a comprehensive understanding of HTML, the backbone of web development, 
+                laying the groundwork for structuring content.<br><br>
+                - Building upon HTML, we delved into the world of CSS to enhance the
+                visual appeal of our web pages, mastering techniques for layout, design, and so on.
+                <br><br>
+                - As a bonus part, the JavaScript course covered the fundamental programming concepts.<br><br>
+                In addition to these courses, thanks to the project we got familiar with Git and Github Desktop 
+                and managed the coordination of the work successfully. As a result, we again understood the 
+                importance of well-prepared organization of the project and teamwork in a real-world scenario. 
+            </p>
+
+        </div>
+        
+         
+        <section>
+            <table class = "firsttable">
+                <caption>
+                    Course contents
+                </caption>
+                <thead>
+                    <tr>
+                        <th><a href="https://www.codecademy.com/learn/learn-html" target="_blank">HTML</a></th>
+                        <th><a href="https://www.codecademy.com/learn/learn-html" target="_blank">CSS</a> </th>
+                        <th><a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">JavaScript</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Elements</td><td>Syntax and Selectors</td><td>Introduction</td></tr>
+                    <tr><td>Structure</td><td>Visual Rules</td><td>Conditionals</td></tr>
+                    <tr><td>Tables</td><td>The box model</td><td>Functions and scope</td></tr>
+                    <tr><td>Forms</td><td>Display and Positioning</td><td>Arrays</td></tr>
+                    <tr><td >Semantic HTML</td><td>Colors</td><td>Loops and Iterations</td></tr>
+                    <tr><td ></td><td>Typography</td><td>Objects</td></tr>
+    
+                </tbody>    
+             </table>
+        </section>    
+    </div>
+
+
+    <div class="team" id="teamid">
+        <h1>Team members</h1>
+        <p>First of the dedicated pages introduce each team member, providing short information about them.
+            As a part of our project, in another page we share the highlights from the 
+         <a href="https://hourofcode.com/az/en" target="_blank">Hour of Code</a> event.<br><br> 
+         Regarding the preparation, first, we got together in a GitHub repository and decided about every 
+         member's duties. Working on this platform enabled us to view the progress of our project regularly. 
+         During the process, we had some difficulties in certain points such as design, layout, and content, but 
+         managed to fix all of them in a collaborative way. The structure of the pages and some other necessary 
+         features are discussed together, then we applied all the decided ones to our work.<br> 
+        </p>
+        <p id = "linkdesc">Links to our team members' individual Codecadamy profiles:</p>
+        <ul id = "codecademylinks">
+            <li><button><a href = "https://www.codecademy.com/profiles/amusayev20487" target="_blank">Alisa Musayev</a></button></li>
+            <li><button><a href = "https://www.codecademy.com/profiles/gunayshabiyeva" target="_blank">Gunay Shabiyeva</a></button></li>
+            <li><button><a href = "https://www.codecademy.com/profiles/MalikHasanzada" target="_blank">Malik Hasanzada</a></button></li>
+            <li><button><a href = "https://www.codecademy.com/profiles/said_m404" target="_blank">Said Mehraliyev</a></button></li>
+        </ul>
+        <p>
+            To conclude, this project taught us a number of useful concepts and we are looking forward to work 
+            together for the upcoming projects.
+        </p>
+    </div>
+
+    <script>
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+      
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+            });
+          });
+        });
+    </script>
+</body>
+</html>

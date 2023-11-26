@@ -1,0 +1,270 @@
+
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+body {
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #191919;
+    
+}
+
+div{
+    border-bottom: 1px solid #595959;
+    margin-right: 30px;
+    padding-bottom: 20px;
+
+}
+
+header {
+    border-bottom: 1px solid #595959;
+    background: rgba(25, 25, 25, 0.50);
+    font-size: large;
+    position: fixed;
+    backdrop-filter: blur(12px);
+    display: flex;    
+    height: 90px;
+    z-index: 9;
+    width: 100%;
+    /* position: fixed; */
+}
+
+.header__logo {
+    border-bottom: none;
+    padding: 10px;
+    padding-bottom: 5px;
+    /* width: 100px; */
+    height: 60px;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: auto;
+    align-self: center;
+    
+}
+
+
+.header__txt{
+    border-bottom: transparent;
+    justify-content: flex-end; 
+    width: 200px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    
+}
+
+.header__txt a {
+    padding: 0 20px;    
+    padding-top: 30px;
+    padding-bottom: 55px;
+    color: #F3E1B2;
+    font-weight: lighter;
+}
+
+.header__txt a:hover {
+    color: white;
+    transition-duration: 0.3s;
+
+}
+
+.links__mobile{
+    margin-right: 45px;
+}
+
+h1{
+    background-image: linear-gradient(91deg, #94e79e -0.13%, #e8e28d 12.76%, #df887f 69.65%, #AAC8FF 103.15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 50px 0px;
+}
+
+/* Style the heading */
+
+
+
+/* Style paragraphs */
+p {
+    
+    color: white;
+    margin-right: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    
+}
+
+/* Style links */
+a {
+    font-weight: 700;
+    color: #F3E1B2;
+    text-decoration: none;
+    
+}
+
+caption{
+    padding: 10px 10px;
+    
+    border-top: 5px solid rgb(60, 58, 56);
+    border-left: 5px solid rgb(60, 58, 56);
+    border-right: 5px solid rgb(60, 58, 56);
+    background: hsl(0 0% 0%);
+    color:#ffffff;
+    
+    font-weight: 700;
+    text-align: left;   
+    box-shadow: 1px 1px 10px#F3E1B2;
+
+    
+}
+
+th{
+    text-align: left;
+}
+
+table, th,td{
+    font-size: 20px;
+    padding: 10px;
+    width: 800px;
+    
+    border: 5px solid rgb(60, 58, 56);
+    border-collapse: collapse;
+    margin-right: 10px;
+}
+
+tr:nth-last-of-type(2n){
+    background-color: hsl(0 0% 0%);;
+}
+
+tr a:hover {
+    text-decoration:underline;
+    
+}
+
+button{
+    
+    padding: 3px 10px;
+    font-size: 30px;
+    margin: 20px 0;
+    background-color: #191919;
+    cursor: pointer;    
+    border-radius: 10px;
+    border-top: 5px solid rgba(107, 121, 121, 0.894);
+    border-left: 5px solid rgba(107, 121, 121, 0.894);
+    box-shadow: 1px 1px 3px #F3E1B2;
+
+}
+
+button:active {
+    background-color: rgba(70, 80, 80, 0.894);
+    transition: background-color 0.1s ease;
+    text-align: center;
+    font-size: 28px;
+
+}
+
+button:hover{
+    background-color: rgba(17, 38, 180, 0.894);
+    transition: background-color 0.4s ease;
+}
+
+nav{
+    font-size: 20px;
+    margin-left: 20px;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    color: #F3E1B2;;
+}
+
+.firsttable {
+    
+    font-size: 20px;
+    box-shadow: 1px 1px 10px #F3E1B2;
+ 
+}
+
+th{
+    text-transform: uppercase;
+}
+
+.firsttable th,tbody{
+    background-color: #191919;
+    color: #F3E1B2;
+}
+
+
+.Intro{
+    margin-left: 30px;
+    padding-bottom: 20px;
+    
+}
+
+.overv{
+    margin-left: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    
+}
+
+#overvtitle{
+    margin-left: 30px;
+}
+#overv_txt{
+    border-bottom: transparent;
+    text-align:justify;
+}
+
+
+.overv p{
+    color: white;
+    float: right;
+    
+}
+
+.timeline{
+    margin-left: 30px;
+    padding-bottom: 20px;
+}
+
+.team{
+    margin-left: 30px;
+    padding-bottom: 20px;
+}
+
+#linkdesc{
+    font-weight: bolder;
+}
+
+#codecademylinks {
+    display: inline-block;
+    list-style: none;
+
+}
+
+.design{
+    margin-left: 30px;
+    
+}
+
+#tablecontents{
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+.navbar a:hover{
+    text-decoration:underline;
+}
+
+.navbar li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+

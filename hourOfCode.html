@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hour of Code</title>
+        <link rel="stylesheet" href="./hourOfCode.css">
+    </head>
+    <body>
+        <header>
+            <div class="header__cnt">
+                <a href="https://www.ada.edu.az" class="header__logo__link" target="_blank"><img src="media/ada_logo_white.png" alt="Logo" class="header__logo"></a>
+                <div class="header__txt">
+                    <a href="./index.html" class="header__link">Home</a>
+                    <a href="./hourOfCode.html" class="header__link links__mobile">Hour of Code Event</a>
+                    <a href="./websitepage.html" class="header__link links__mobile">Website Project</a>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="content-1">
+                <div class="content__heading" id="heading-1"><h1>Hour of Code</h1></div>
+            </div>
+            <div class="content-2">
+                <div class="content__heading" id="heading-2"><h2>What Is Hour of Code?</h2></div>
+                <div class="content__paragraph" id="paragraph-1"><p>For students of all ability levels, <a href="https://hourofcode.com/az/en" target="_blank">The Hour of Code</a> offers a free introduction to computer science through entertaining exercises and movies. 20,000 instructors, 58,000 volunteers, and over 400 partners are helping to celebrate AI and coding this year.</p></div>
+                <div class="content__paragraph" id="paragraph-2"><p><strong>Lead an Hour of Code Activity</strong> <br> You have an extensive selection of over 700 activities to pick from, categorized based on grade level, experience level, and AI integration. To help us celebrate all of the global events taking place, kindly <a href="https://hourofcode.com/az/en/events" target="_blank">register</a> your activity as soon as you know what you are planning.</p></div>
+            </div>
+            <div class="content-3">
+                <div class="content__heading" id="heading-3"><h2>Our Contribution to Hour of Code Event</h2></div>
+                <div class="content__image">
+                    <div class="image__row">
+                        <div class="image__col">
+                            <div class="image"><img src="media/IMG_1740.jpg" alt="A bunch of children learning" width="350px" height="350px"></div>
+                        </div>
+                        <div class="image__col">
+                            <div class="image"><img src="media/IMG_1751.jpg" alt="A student teaching several children" width="350px" height="350px"></div>
+                        </div>
+                        <div class="image__col">
+                            <div class="image"><img src="media/IMG_1769.jpg" alt="A student helping a child" width="350px" height="350px"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__image">
+                    <div class="image__row">
+                        <div class="image__col">
+                            <div class="image"><img src="media/IMG_2078.JPG" alt="Several children learning via computers" width="350px" height="350px"></div>
+                        </div>
+                        <div class="image__col">
+                            <div class="image"><img src="media/IMG_2089.JPG" alt="A student explaining to a child" width="350px" height="350px"></div>
+                        </div>
+                        <div class="image__col">
+                            <div class="image"><img src="media/IMG_2108.JPG" alt="Children listening to someone" width="350px" height="350px"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__image">
+                    <div class="image__row">
+                        <div class="image__col">
+                            <div class="image"><img src="media/IMG_2113.JPG" alt="A student teaching several children" width="350px" height="350px"></div>
+                        </div>
+                        <div class="image__col">
+                            <div class="image"><img src="media/IMG_2151.JPG" alt="A student helping children" width="350px" height="350px"></div>
+                        </div>
+                        <div class="image__col">
+                            <div class="image"><img src="media/IMG_2155.JPG" alt="Students explaining to children" width="350px" height="350px"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__link">You can learn more about our Hour of Code event in our <a href="https://www.facebook.com/permalink.php?story_fbid=pfbid0aLiY9KkgQMeM6RjsvK5BYvcnCiA3nYFFp6wvg37mUppmewYTSRxbKsPb526FoBWQl&id=61553614282173" target="_blank">Facebook post.</a></div>
+            </div>
+        </div>
+        <script>
+            var elementToAnimate = document.getElementById('heading-2');
+            var triggerPosition = 100;
+    
+            function checkScroll() {
+                var scrollPosition = window.scrollY;
+    
+                if (scrollPosition >= triggerPosition && !elementToAnimate.classList.contains('transform-animation')) {
+                    elementToAnimate.classList.add('transform-animation');
+                }
+            }
+    
+            window.addEventListener('scroll', checkScroll);
+            checkScroll();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #191919;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: purple;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: rgb(25, 25, 25);
+    z-index: 9;
+    border-bottom: #353535 1px solid;
+}
+
+.header__cnt {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    height: 90px;
+    align-content: center;
+}
+
+.header__logo {
+    height: 80px;
+    padding-top: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-self: center;
+}
+
+.header__link {
+    color: #F3E1B2;
+    font-size: 18px;
+}
+.header__link:hover {
+    color: #f1f0ed;
+    transition-duration: 0.3s;
+}
+
+.header__txt {
+    display: flex;
+    width: 420px;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header__logo__link {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@keyframes intro {
+    0% {
+        font-size: 0px;
+        color: aqua;
+    }
+    50% {
+        color: darkgoldenrod;
+    }
+    100% {
+        font-size: 50px;
+        color: firebrick;
+    }
+}
+
+@keyframes colorchange {
+    0% {
+        color: #001F3F;
+    }
+    20% {
+        color: #87CEEB;
+    }
+    40% {
+        color: #90EE90;
+    }
+    60% {
+        color: #FFD700;
+    }
+    80% {
+        color: #FF6347;
+    }
+    100% {
+        color: #800080;
+    }
+}
+
+@keyframes transformx {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.transform-animation {
+    animation-name: transformx;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.content-1 {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+                linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+                url("media/collective.JPG");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    padding: 50px;
+    height: 100vh;
+}
+
+.content-2 {
+    background-image: url("media/hoc2023_social.png");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    padding: 50px;
+    height: 100vh;
+}
+
+.content__heading {
+    font-size: 50px;
+    text-align: center;
+}
+
+#heading-1 {
+    animation-name: intro, colorchange;
+    animation-duration: 2s, 5s;
+    animation-iteration-count: infinite, infinite;
+    animation-direction: alternate;
+}
+
+#heading-2 {
+    color: purple;
+}
+
+.content__paragraph {
+    background-color: white;
+    text-align: justify;
+    font-size: large;
+}
+
+#paragraph-1 {
+    margin-left: 5%;
+    margin-right: 68%;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#paragraph-2 {
+    margin-right: 5%;
+    margin-left: 68%;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.content-3 {
+    color: #D9A476;
+    height: 100vh;
+}
+
+.image__row {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.image__col {
+    margin: 0 10px;
+}
+
+.image {
+    padding: 10px;
+    border: 2px solid #D9A476;
+    border-radius: 10px;
+}
+
+.post__link {
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+
+img {
+    object-fit: cover;
+}
